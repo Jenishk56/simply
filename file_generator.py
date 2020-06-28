@@ -1,9 +1,10 @@
-w = open("email_big.txt", "a")
+import random
+w = open("random_big.txt", "w")
 count = 0
-while count < 1000:
-    w.write("Ryan has sent an invoice email to john.d@yahoo.com")
-    w.write("by using his email id ryan.arjun@gmail.com and he also")
-    w.write("shared a copy to his boss rosy.gray@amazon.co.uk on the cc part.")    
+dic = ["Hello World", "%", "Nice%", "Nanana", "1212121", "I am not gonna tell you how this is going work", "bhad me jao"]
+while count < 100000:
+    w.write(random.choice(dic))    
+    w.write("\n")
     count+=1
 
 
