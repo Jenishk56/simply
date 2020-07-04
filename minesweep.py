@@ -4,7 +4,7 @@ def minesweeper(w,h,k):
     if w == 0 or h == 0:
         return 0
 
-    if k > (W*h):
+    if k > (w*h):
         return 0
         
     while k >= 0:
