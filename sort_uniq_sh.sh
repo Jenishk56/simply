@@ -1,0 +1,1 @@
+awk '{ print $1}' install.log | sort | uniq -c | sort -nr | head -n 10
