@@ -10,12 +10,12 @@ import functools
 start_time = time.time()
 @functools.lru_cache(maxsize=128)
 def tail(fname, lines):
-    def rendering(f, sep=''):
-        if sep != '':
-            data.extend('\n')
-        data.extend(f.readlines())
-        if len(data) >= lines or f.tell() == 0 or f.tell() == fsize:
-            print(''.join(data[-lines:]))
+    # def rendering(f, sep=''):
+    #     if sep != '':
+    #         data.extend('\n')
+    #     data.extend(f.readlines())
+    #     if len(data) >= lines or f.tell() == 0 or f.tell() == fsize:
+    #         print(''.join(data[-lines:]))
             
     SLEEP_INTERVAL = 1.0
     bufsize = io.DEFAULT_BUFFER_SIZE
@@ -37,7 +37,7 @@ def tail(fname, lines):
             bufsize = fsize
         print("fsize {} bufsize {}".format(fsize, bufsize))
         data = []
-        # for -n 
+        # for -n
         while True:
             iter +=1
             
