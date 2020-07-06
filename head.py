@@ -16,6 +16,7 @@ def head(n):
         while pos <= fsize:
             next_slot = pos + bufferSize
             while f.tell() < next_slot and f.tell() <= fsize:
+                f.seek(pos)
                 line = f.readline(next_slot-f.tell())
                 line = line.strip()
                 data.append(line)
