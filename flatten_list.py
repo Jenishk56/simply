@@ -1,9 +1,11 @@
 flat_list = []
-def flatten(input):
-    for i, _ in enumerate(input):
-        while i < len(input) and type(input[i]) == list:
-            input[i:i+1] = input[i]
-    return sum([list(x) for x in input], [])
+def flatten(S):
+    if S == []:
+        return S
+    if isinstance(S[0], list):
+        return flatten(S[0]) + flatten(S[1:])
+    print(S)
+    return S[:1] + flatten(S[1:])
 
 # def explorelists(l):
 #     result = []
