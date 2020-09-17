@@ -24,8 +24,6 @@ def tic_tac_toe(x):
             skip_input = ''
         else:
             skip_input = next_input
-
-    # board = [['X', 'X', 'O'], ['O', 'O', 'X'], ['O', 'O', 'X']]
     
     for i in range(w):
         temp = []
