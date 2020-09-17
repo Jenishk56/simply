@@ -1,0 +1,7 @@
+check_set = set()
+check_set.add("a")
+print(check_set)
+check_set.add("b")
+print(check_set)
+check_set.add("a")
+print(check_set)
