@@ -1,1 +1,0 @@
-def tail(fname, n):

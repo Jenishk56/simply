@@ -39,7 +39,7 @@ def tic_tac_toe(x):
     for i in range(w):
         horizontal_compare = 0
         for j in range(h):
-            if (i == j and i < w-1 and j < w-1 and board[i][j] == board[i+1][j+1]):
+            if (i == j and i < w-1 and j < h-1 and board[i][j] == board[i+1][j+1]):
                 cross_compare += 1
             
             if (j < h-1 and board[i][j] == board[i][j+1]):
